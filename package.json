@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-smh",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint and Prettier Config (copped from Wes Bos 3.0.2)",
   "keywords": [
     "javascript",

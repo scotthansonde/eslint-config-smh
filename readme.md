@@ -2,13 +2,14 @@
 These are my settings for ESLint and Prettier
 
 You might like them - or you might not. Don't worry you can always change them.
+This is forked from https://github.com/wesbos/eslint-config-wesbos, thanks Wes!
 
 ## What it does
 * Lints JavaScript based on the latest standards
 * Fixes issues and formatting errors with Prettier
 * Lints + Fixes inside of html script tags
 * Lints + Fixes React via eslint-config-airbnb
-* You can see all the [rules here](https://github.com/wesbos/eslint-config-wesbos/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
+* You can see all the [rules here](https://github.com/scotthansonde/eslint-config-smh/blob/master/.eslintrc.js) - these generally abide by the code written in my courses. You are very welcome to overwrite any of these settings, or just fork the entire thing to create your own.
 
 ## Installing
 
@@ -26,7 +27,7 @@ I also install globally so that any project or rogue JS file I write will have l
 2. Then we need to install everything needed by the config:
 
 ```
-npx install-peerdeps --dev eslint-config-wesbos
+npx install-peerdeps --dev eslint-config-smh
 ```
 
 3. You can see in your package.json there are now a big list of devDependencies.
@@ -35,15 +36,15 @@ npx install-peerdeps --dev eslint-config-wesbos
 
 ```json
 {
-  "extends": [ "wesbos" ]
+  "extends": [ "smh" ]
 }
 ```
 
-For TypeScript projects, use `wesbos/typescript`.
+For TypeScript projects, use `smh/typescript`.
 
 ```json
 {
-  "extends": [ "wesbos/typescript" ]
+  "extends": [ "smh/typescript" ]
 }
 ```
 
@@ -70,7 +71,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 ```js
 {
   "extends": [
-    "wesbos"
+    "smh"
   ],
   "rules": {
     "no-console": 2,
@@ -113,18 +114,18 @@ Once you have done one, or both, of the above installs. You probably want your e
   }
   ```
 
-After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window. 
+After attempting to lint your file for the first time, you may need to click on 'ESLint' in the bottom right and select 'Allow Everywhere' in the alert window.
 
 Finally you'll usually need to restart VS code. They say you don't need to, but it's never worked for me until I restart.
 
 ## With Create React App
 
-1. Run `npx install-peerdeps --dev eslint-config-wesbos`
-1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "wesbos"`
+1. Run `npx install-peerdeps --dev eslint-config-smh`
+1. Crack open your `package.json` and replace `"extends": "react-app"` with `"extends": "smh"`
 
 ## With Gatsby
 
-1. Run `npx install-peerdeps --dev eslint-config-wesbos`
+1. Run `npx install-peerdeps --dev eslint-config-smh`
 1. If you have an existing `.prettierrc` file, delete it.
 1. follow the `Local / Per Project Install` steps above
 
@@ -162,15 +163,15 @@ The following steps are for a typical Node / ESLint global installtion.  If you 
 
 ## With Typescript
 
-Same instructions as above, just make sure you extend `wesbos/typescript` instead of just `wesbos`.
+Same instructions as above, just make sure you extend `smh/typescript` instead of just `smh`.
 
 ## With Yarn
 
-It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev eslint-config-wesbos -Y`
+It should just work, but if they aren't showing up in your package.json, try `npx install-peerdeps --dev eslint-config-smh -Y`
 
 ## Issues with ESLint not formatting code
 
-If you experience issues with ESLint not formatting the code or you receive a `Parsing error: Cannot find module '@babel/preset-react` error message then you need to check that you opened the folder where you installed and configured ESLint directly in VS Code. The correct folder to open will be the one where you installed the `eslint-config-wesbos` npm package and where you created the `.eslintrc` file.
+If you experience issues with ESLint not formatting the code or you receive a `Parsing error: Cannot find module '@babel/preset-react` error message then you need to check that you opened the folder where you installed and configured ESLint directly in VS Code. The correct folder to open will be the one where you installed the `eslint-config-smh` npm package and where you created the `.eslintrc` file.
 
 Opening a parent folder or child folder in your code editor will cause ESLint to fail in finding the ESLint npm packages and the formatting won't work.
 
