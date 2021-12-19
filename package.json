@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-wesbos",
-  "version": "3.0.2",
-  "description": "ESLint and Prettier Config from Wes Bos",
+  "name": "eslint-config-smh",
+  "version": "1.0.0",
+  "description": "ESLint and Prettier Config (copped from Wes Bos 3.0.2)",
   "keywords": [
     "javascript",
     "typescript",
@@ -12,8 +12,8 @@
     "prettier"
   ],
   "main": "index.js",
-  "repository": "git@github.com:wesbos/eslint-config-wesbos.git",
-  "author": "Wes bos <wes@wesbos.com>",
+  "repository": "git@github.com:scotthansonde/eslint-config-smh.git",
+  "author": "Scott Hanson <papascott@gmail.com>",
   "license": "MIT",
   "peerDependencies": {
     "@babel/core": "^7.16.0",
